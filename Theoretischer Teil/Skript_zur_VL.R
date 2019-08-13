@@ -27,6 +27,10 @@
 a <- 5 # Der Operator "<-" weist a den Wert 5 zu
 a
 
+x = 5
+x
+
+
 # Jetzt kann mit dem Objekt a gerechnet werden
 a * 2
 
@@ -53,6 +57,8 @@ b == c
 b[1]
 b[1:3]
 b[c(1, 4)]
+b[b <= 3]
+
 # Mit Vektoren rechnen
 a * b
 d <- a * b # Ergebnis als Objekt d speichern
@@ -72,6 +78,8 @@ cor(b, d)  # Korrelationskoeffizient zweier Vektoren
 
 # Eigene Funktion schreiben
 # Für die Berechnung des Standardfehlers des Mittelwerts
+
+
 se_of_mean <- function(x){
   sd(x)/sqrt(length(x))
 }
